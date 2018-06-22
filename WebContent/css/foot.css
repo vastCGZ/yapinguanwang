@@ -1,0 +1,50 @@
+ul li{
+    list-style-type: none;
+}
+
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img {
+    margin: 0;
+    padding: 0
+}
+div.footer_div{
+    background: url("../images/foot/diqiu.png") no-repeat center center;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+}
+div.footer_div>ul.footer_ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.footer_div>ul.footer_ul a,
+div.footer_div>ul.footer_ul span{
+    color: #ffffff;
+}
+div.footer_div>ul.footer_ul a:hover{
+    text-decoration: none;
+}
+div.footer_div>ul.footer_ul>li:first-child{
+    margin-top: 3rem;
+}
+div.footer_div>ul.footer_ul>li:first-child>ul{
+    display: flex;
+}
+div.footer_div>ul.footer_ul>li:first-child>ul>li{
+    width: 8rem;
+    height: 3rem;
+    text-align: center;
+    line-height: 3rem;
+}
+div.footer_div>ul.footer_ul>li:nth-child(3){
+    margin: 0.8rem 0 2rem 0;
+}
+div.footer_div>ul.footer_ul>li:last-child{
+    margin-bottom: 10rem;
+}
+div.footer_div>ul.footer_ul>li:last-child>img{
+    height: 64px;
+}
+div.footer_div>ul.footer_ul>li:last-child>img:last-child{
+    margin-left: 4rem;
+}

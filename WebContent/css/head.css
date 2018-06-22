@@ -1,0 +1,31 @@
+ul li{
+    list-style-type: none;
+}
+
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img {
+   margin: 0;
+   padding: 0
+}
+body a{
+    text-decoration: none;
+    color: #333;
+}
+.img_logo{
+    height: 75px;
+}
+div.nav-logo{
+    display: inline-block;
+}
+div#navBar>ul>li>a:hover{
+    background-color: transparent;
+}
+nav.navbar.navbar-fixed-top.gray-lighter{
+    padding: 2rem 0;
+    background-color: #ffffff;
+}
+.navbar-toggle .icon-bar{
+    background-color: #333;
+}
+ul.navbar-nav{
+    margin: 7.5px 0;
+}

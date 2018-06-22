@@ -1,0 +1,362 @@
+ul li{
+    list-style-type: none;
+}
+
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img {
+    margin: 0;
+    padding: 0
+}
+header {
+    height: 9rem;
+    background-color: #ffffff;
+}
+a p:hover{
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    header{
+        height: 185px;
+        background-color: #ffffff;
+    }
+}
+.type{
+    background-color: #F9F9F9;
+}
+a:active,a:focus,a:hover,a:visited,a:focus-within{
+    text-decoration: none!important;
+}
+/*标题*/
+.common_title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+    font-size: 22px;
+    margin-bottom: 60px;
+}
+.common_title>p:last-child{
+    margin-top: 1rem;
+}
+.common_pic{
+    display: flex;
+    justify-content: center;
+}
+.common_pic>img{
+    width: 153px;
+    height: 5rem;
+}
+/*业务类型*/
+div.businessType{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+    flex-wrap: wrap;
+}
+@media (min-width: 431px) and (max-width: 768px){
+    div.businessType>a:nth-child(odd){
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+    div.businessType>a:nth-child(even){
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+}
+@media (min-width: 320px) and (max-width: 430px){
+    div.businessType>a{
+        margin-left: 0!important;
+        margin-bottom: 15px!important;
+    }
+}
+/*业务种类*/
+.businessType>a{
+    margin-left: 30px;
+}
+.businessType>a:first-child{
+    margin-left: 0;
+}
+.businessType>a>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 412px;
+    width: 296px;
+    background-color: #ffffff;
+}
+.businessType>a>div>img:first-child{
+    width: 130px;
+}
+.businessType>a>div>p{
+    font-size: 13px;
+    color: #999;
+}
+.businessType>a>div>p:nth-child(2){
+    margin-top: 1rem;
+    font-size: 16px;
+    color: #333;
+}
+.businessType>a>div>img:last-child{
+    width: 190px;
+    height: 2rem;
+    margin-top: 4rem;
+}
+/*案例展示*/
+div.case_div{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 140px;
+}
+div.case_div>div.case_div_ul{
+    display: flex;
+    flex-direction: column;
+}
+div.case_div>div.case_div_ul>div.case_div_li{
+    display: flex;
+}
+div.case_div>div.case_div_ul>div.case_div_li img{
+    width: 100%;
+    height: 100%;
+}
+div.case_div>div.case_div_ul>div.case_div_li>div{
+    display: flex;
+}
+div.case_div>div.case_div_ul>div.case_div_li>div:last-child{
+    flex-direction: column;
+    margin-left: 30px;
+}
+div.case_div>div.case_div_ul>div.case_div_li>div:last-child>a{
+    width: 402px;
+    height: 275px;
+    background-color: blue;
+    margin-bottom: 30px;
+}
+/*第2块*/
+div.case_div>div.case_div_ul>div.case_div_li:first-child>div:first-child>a{
+    width: 834px;
+    height: 580px;
+    background-color: bisque;
+    margin-bottom: 30px;
+}
+/*第3块*/
+div.case_div>div.case_div_ul>div.case_div_li:last-child>a{
+    width: 402px;
+    height: 275px;
+    background-color: red;
+    margin-left: 30px;
+}
+div.case_div>div.case_div_ul>div.case_div_li:last-child>a:first-child{
+    margin-left: 0;
+}
+/*公司介绍*/
+.company_ul{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 140px;
+    flex-wrap: wrap;
+}
+.company_ul>li{
+    width: 635px;
+    height: 420px;
+}
+.company_ul>li:last-child{
+    background-color: #ffffff;
+    padding: 20px 40px 0 40px;
+    display: flex;
+    flex-direction: column;
+    font-size: 19px;
+    line-height: 40px
+}
+.company_ul>li:last-child>p:first-child{
+    height: 88%;
+ }
+.company_ul>li:last-child>p:last-child{
+    color: #4C69FF;
+    text-align: right;
+}
+.company_ul>li>img{
+    width: 100%;
+    height: 100%;
+}
+/*手机*/
+@media (min-width: 320px) and (max-width: 430px){
+    .company_ul>li{
+        height: 100%;
+        font-size: 16px!important;
+    }
+}
+/*公司创始人*/
+div.creation{
+    background: url("../images/coporateCulture/coporateCulture.png") no-repeat;
+    background-size: cover;
+}
+div.creation li.common_title{
+    color: #ffffff;
+}
+div.creation .businessType>a>div>p {
+    color: #333;
+}
+div.creation .businessType>a>div{
+    background-color: #F7F2F3;
+}
+div.creation .businessType>a>div>p:nth-child(2) {
+    color: #5F78FE;
+}
+div.creation .businessType>a>div>img:last-child{
+    width: 160px;
+    border-radius: 20px;
+}
+/*新闻动态*/
+div.journalismType{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 126px;
+}
+div.journalismType>a{
+    width: 402px;
+    margin-left: 50px;
+}
+div.journalismType>a>div{
+    width: 100%;
+    height: 485px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    box-shadow: 2px 5px 5px #EEF1FF;
+}
+div.journalismType>a>div>img:first-child{
+    width: 100%;
+    height: 285px;
+}
+div.journalismType>a>div>img:last-child{
+    position: absolute;
+    left: -40px;
+    top: 12rem;
+    margin: 0;
+    width: 80px;
+    height: 80px;
+}
+div.journalismType>a>div>p{
+    font-size: 16px;
+    padding: 0 20px;
+}
+div.journalismType>a>div>p:nth-child(2){
+    font-size: 20px;
+    margin-bottom: 10px;
+    width:400px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow: hidden;
+}
+div.journalismType>a>div>p:nth-child(3){
+    height: 130px;
+    text-overflow:ellipsis;
+    overflow: hidden;
+}
+/*联系我们*/
+div.contact{
+    background: linear-gradient(to bottom, #4C69FF 65%, #F9F9F9 35%);
+    padding-bottom: 160px;
+}
+div.contact li.common_title{
+    color: #ffffff;
+}
+.contactType{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contactType>.contactTypeDiv{
+    width: 1282px;
+    height: 600px;
+    background-color: #ffffff;
+    display: flex;
+    box-shadow: 0 5px 15px #EEF1FF;
+}
+.contactType>.contactTypeDiv>div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contactType>.contactTypeDiv>div>div{
+    width: 66%;
+}
+/**/
+.contactType>.contactTypeDiv>div:first-child>div:nth-child(1),
+.contactType>.contactTypeDiv>div:first-child>div:nth-child(3),
+.contactType>.contactTypeDiv>div:first-child>div:nth-child(4),
+.contactType>.contactTypeDiv>div:first-child>div:nth-child(5){
+    height: 30px;
+    line-height: 30px;
+}
+.contactType>.contactTypeDiv>div:first-child>div:nth-child(3){
+    margin-top: 15px;
+}
+.contactType>.contactTypeDiv>div:first-child>div:nth-child(1){
+    margin-bottom: 10px;
+}
+.contactType>.contactTypeDiv>div:first-child>div:nth-child(3)>img,
+.contactType>.contactTypeDiv>div:first-child>div:nth-child(4)>img,
+.contactType>.contactTypeDiv>div:first-child>div:nth-child(5)>img{
+    width: 20px;
+    height: 20px;
+}
+.contactType>.contactTypeDiv>div:first-child>div:nth-child(3)>span,
+.contactType>.contactTypeDiv>div:first-child>div:nth-child(4)>span,
+.contactType>.contactTypeDiv>div:first-child>div:nth-child(5)>span{
+    color: #999999;
+}
+.contactType>.contactTypeDiv>div:first-child>div:nth-child(1)>p{
+    color: #7689FF;
+    font-size: 18px;
+}
+/**/
+.contactType>.contactTypeDiv>div:last-child>div:not(:last-child){
+    background-color: #F4F4F4;
+    margin: 10px 0;
+    position: relative;
+}
+.contactType>.contactTypeDiv>div:last-child>div:nth-child(1),
+.contactType>.contactTypeDiv>div:last-child>div:nth-child(2){
+    height: 40px;
+    line-height: 40px;
+}
+
+.contactType>.contactTypeDiv>div:last-child>div>span{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    color: #999999;
+}
+.contactType>.contactTypeDiv>div:last-child>div:nth-child(1)>input,
+.contactType>.contactTypeDiv>div:last-child>div:nth-child(2)>input{
+    border: 0px;
+    outline:none;
+    cursor: pointer;
+    background-color: #F4F4F4;
+    padding-left: 55px;
+}
+.contactType>.contactTypeDiv>div:last-child>div:nth-child(3)>span{
+    top: 10px;
+}
+.contactType>.contactTypeDiv>div:last-child>div:nth-child(3)>textarea{
+    vertical-align:text-top;
+    border: 0px;
+    outline:none;
+    cursor: pointer;
+    resize:none;
+    background-color: #F4F4F4;
+    padding-left: 55px;
+    padding-top: 8px;
+    width: 100%;
+}
+.contactType>.contactTypeDiv>div:last-child>div:nth-child(4)>button{
+    background-color: #4261FF;
+    color: #ffffff;
+    border: #4261FF;
+    height: 40px;
+    width: 100px;
+}

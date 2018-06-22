@@ -1,0 +1,44 @@
+
+header {
+    height: 9rem;
+    background-color: #ffffff;
+}
+/*标题*/
+.common_title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+    font-size: 22px;
+    margin-bottom: 60px;
+}
+.common_title>p:last-child{
+    margin-top: 1rem;
+}
+.common_pic{
+    display: flex;
+    justify-content: center;
+}
+.common_pic>img{
+    width: 153px;
+    height: 5rem;
+}
+.Culture_Ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 250px;
+}
+.Culture_Li{
+    width: 40%;
+}
+.Culture_Li>h4{
+    margin: 40px 0;
+    font-weight: bold;
+}
+.Culture_Li>p{
+    line-height: 30px;
+}
+.Culture_Li:first-child>h4{
+    margin: 0 0 40px;
+}
