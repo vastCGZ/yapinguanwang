@@ -1,0 +1,129 @@
+ul.navbar-nav>li:nth-child(5)>a{
+    color: #4967FF;
+    border-top:3px solid #4967FF;
+}
+section>div:first-child>ul>li>img{
+    width: 100%;
+}
+/*标题*/
+.common_title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+    font-size: 22px;
+    margin-bottom: 60px;
+}
+.common_title>p:last-child{
+    margin-top: 1rem;
+    font-size: 14px;
+    color: #999999;
+}
+.common_pic{
+    display: flex;
+    justify-content: center;
+}
+.common_pic>img{
+    width: 153px;
+    height: 5rem;
+}
+.excellentCase{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 280px;
+}
+.excellentCase>ul{
+    width: 120px;
+    height: 838px;
+    display: flex;
+    flex-direction: column;
+}
+.excellentCase>ul>li:first-child{
+    width: 120px;
+    padding: 10px 15px;
+}
+.excellentCase>ul>li>a:hover{
+    border-radius: 0!important;
+}
+.excellentCase>ul>li.active>a{
+    background-color: #4261FF!important;
+    border-radius: 0!important;
+}
+.identifier>div{
+    display: flex;
+    width: 650px;
+    margin-left: 20px;
+}
+.identifier>div:first-child{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    height: 750px;
+    overflow: hidden;
+}
+.identifierDiv{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 240px;
+    margin-right: 25px;
+    border: 1px solid #dedede;
+    margin-bottom: 10px;
+    background-color: #454A62;
+}
+.identifierDiv:nth-child(3n){
+    margin-right: 0;
+}
+.identifierDiv:hover{
+    border-color: #4261FF;
+}
+.identifierDiv>div:first-child{
+    height: 65%;
+}
+.identifierDiv>div:first-child>img{
+    height: 100%;
+    width: 100%;
+}
+.identifierDiv>div:last-child{
+    height: 35%;
+    background-color: #ffffff;
+}
+.identifierDiv>div:last-child>p{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.identifier>div:last-child{
+    justify-content: center;
+    align-items: flex-end;
+    height: 88px;
+}
+
+.pages{
+    height:88px;
+}
+.pages a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 5px;
+    margin-left: 5px;
+    border:1px solid #ddd;
+    border-radius:4px;
+    color:#333;
+    background:#fff;
+}
+.pages a.current{
+    border-color:#4261FF;
+    background:#4261FF;
+    color:#fff;
+}
+.pages a.disabled{
+    color:#bfbfbf;
+    background:#f2f2f2;
+    border:1px solid #bfbfbf;
+}

@@ -1,9 +1,12 @@
-a:active,a:focus,a:hover,a:visited,a:focus-within{
-    text-decoration: none!important;
-}
 header {
-    height: 9rem;
-    background-color: #ffffff;
+    height: 9rem!important;
+}
+ul.navbar-nav>li:nth-child(3)>a{
+    color: #4967FF;
+    border-top:3px solid #4967FF;
+}
+section>div:first-child>ul>li>img{
+    width: 100%;
 }
 /*标题*/
 .common_title{

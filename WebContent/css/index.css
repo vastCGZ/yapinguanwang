@@ -6,9 +6,9 @@ html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img {
     margin: 0;
     padding: 0
 }
-header {
-    height: 9rem;
-    background-color: #ffffff;
+ul.navbar-nav>li:first-child>a{
+    color: #4967FF;
+    border-top:3px solid #4967FF;
 }
 a p:hover{
     text-decoration: none;
@@ -24,6 +24,61 @@ a p:hover{
 }
 a:active,a:focus,a:hover,a:visited,a:focus-within{
     text-decoration: none!important;
+}
+/*轮播图*/
+.swiper-pagination-bullet{
+    width: 5px!important;
+    height: 5px!important;
+    background: #3D59FF!important;
+}
+.swiper-pagination-bullet-active{
+    width: 40px !important;
+    height: 5px!important;
+    border-radius: 20px !important;
+    opacity: .5!important;
+}
+/*iphone6 plus*/
+@media (min-width: 376px) and (max-width: 415px){
+    .banner{
+        height: 214.14px;
+    }
+    .banner>div>div>img{
+        height: 100%;
+    }
+}
+
+/*iphone6*/
+@media (min-width: 321px) and (max-width: 376px){
+    .banner{
+        height: 205.91px;
+    }
+    .banner>div>div>img{
+        height: 100%;
+    }
+}
+
+/*iphone5*/
+@media (max-width: 321px){
+    .banner{
+        height: 172.56px;
+    }
+    .banner>div>div>img{
+        height: 100%;
+    }
+}
+.banner{
+    width: 100%;
+}
+.banner>div:last-child{
+    width: 100%;
+}
+.banner>div>div{
+    border-radius: 1rem;
+    width: 37.5rem;
+}
+.banner>div>div>img{
+    width: 100%;
+    height: 100%;
 }
 /*标题*/
 .common_title{
@@ -102,6 +157,9 @@ div.businessType{
     margin-top: 4rem;
 }
 /*案例展示*/
+div.case_div>div.case_div_ul>div.case_div_li a{
+    background-color:  #2aabd2;
+}
 div.case_div{
     display: flex;
     justify-content: center;
@@ -128,21 +186,18 @@ div.case_div>div.case_div_ul>div.case_div_li>div:last-child{
 div.case_div>div.case_div_ul>div.case_div_li>div:last-child>a{
     width: 402px;
     height: 275px;
-    background-color: blue;
     margin-bottom: 30px;
 }
 /*第2块*/
 div.case_div>div.case_div_ul>div.case_div_li:first-child>div:first-child>a{
     width: 834px;
     height: 580px;
-    background-color: bisque;
     margin-bottom: 30px;
 }
 /*第3块*/
 div.case_div>div.case_div_ul>div.case_div_li:last-child>a{
     width: 402px;
     height: 275px;
-    background-color: red;
     margin-left: 30px;
 }
 div.case_div>div.case_div_ul>div.case_div_li:last-child>a:first-child{
@@ -187,7 +242,8 @@ div.case_div>div.case_div_ul>div.case_div_li:last-child>a:first-child{
 }
 /*公司创始人*/
 div.creation{
-    background: url("../images/coporateCulture/coporateCulture.png") no-repeat;
+/*    background: url("../images/coporateCulture/coporateCulture.png") no-repeat;*/
+    background-color:  #2aabd2;
     background-size: cover;
 }
 div.creation li.common_title{
